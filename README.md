@@ -33,7 +33,7 @@ N/A
 
 ## Video Link
 
-[N/A](https://drive.google.com/file/d/1gjVXlYcE4uivsuK0JQ1ncOWDffKKWvnc/view)
+(https://drive.google.com/file/d/1gjVXlYcE4uivsuK0JQ1ncOWDffKKWvnc/view)
 
 ## Questions
 
