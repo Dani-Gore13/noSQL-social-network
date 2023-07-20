@@ -7,6 +7,19 @@ const options = {
   useUnifiedTopology: true,
 };
 
+// Create a connection to the MongoDB database
 mongoose.connect(`${url}/${dbName}`, options);
 
-module.exports = mongoose.connection;
+// Get the default connection
+const db = mongoose.connection;
+
+// Event handlers for the database connection
+db.on('error', (error) => {
+  console.error('Error connecting to MongoDB:', error);
+});
+
+db.once('open', () => {
+  console.log('Connected to MongoDB successfully!');
+});
+
+module.exports = db;
